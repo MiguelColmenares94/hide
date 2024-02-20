@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the Treasure Game</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Custom CSS for styling */
+    body {
+      background-color: #f8f9fa;
+      color: #343a40;
+      font-family: Arial, sans-serif;
+      padding-top: 50px;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 2500px; /* Ensuring page has scrollable content */
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .hidden-link {
+      color: transparent;
+      text-decoration: none;
+    }
+
+    .hidden-link:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    .treasure-icon {
+      font-size: 50px;
+      color: #ffc107;
+    }
+
+    .fake-clue {
+      font-style: italic;
+      color: #6c757d;
+    }
+
+    .image-container {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Welcome to the Treasure Hunt!</h1>
+    <hr>
+    <p>Congratulations! You've found the first clue. Now, let's proceed to the next step.</p>
+    <p>Look closely at the following sentence:</p>
+    <blockquote class="blockquote">
+      <p class="mb-0">"The treasure is hidden where the stars shine brightest."</p>
+      <footer class="blockquote-footer">- Unknown</footer>
+    </blockquote>
+    <p>Hint: You might want to explore the night sky...</p>
+    <p>Did you notice something peculiar?</p>
+    <p>There are many paths to the treasure. Here are some clues:</p>
+    <ul>
+      <li>The key is under the doormat.</li>
+      <li>You'll find it in the oldest tree.</li>
+      <li>It's hidden beneath the fountain.</li>
+      <li><a href="https://cdn2.thedogapi.com/images/HyaztunHm_1280.jpg" target="_blank" class="fake-clue">Check under this doormat</a></li> <!-- Fake clue -->
+      <li><a href="https://cdn2.thedogapi.com/images/B1OLt_3rQ_1280.jpg" target="_blank" class="fake-clue">Look inside this tree</a></li> <!-- Fake clue -->
+      <li><a href="https://cdn2.thedogapi.com/images/Ov_Rzma1O.jpg" target="_blank" class="fake-clue">Check inside this fountain</a></li> <!-- Fake clue -->
+      <li><span class="fake-clue">The treasure is buried in the backyard.</span></li> <!-- Fake clue -->
+      <li><span class="fake-clue">Look for it behind the painting.</span></li> <!-- Fake clue -->
+    </ul>
+    <p>There are also some treasures hidden in the text. Can you find them all?</p>
+    <p>Happy hunting!</p>
+    <hr>
+    <div class="container">
+  <h2 class="text-center">Discover Some Cute Cats and Dogs</h2>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <!-- Displaying mixed images of cats and dogs -->
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/8f.gif" class="img-fluid" alt="Cat 1">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/959.jpg" class="img-fluid" alt="Cat 2">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/HyaztunHm_1280.jpg" class="img-fluid" alt="Dog 1">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/B1OLt_3rQ_1280.jpg" class="img-fluid" alt="Dog 2">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/Ov_Rzma1O.jpg" class="img-fluid" alt="Dog 3">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/5cs.jpg" class="img-fluid" alt="Cat 3">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/3qt.gif" class="img-fluid" alt="Cat 4">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/S13yZg5VQ_1280.jpg" class="img-fluid" alt="Dog 4">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <!-- Adding more rows of images -->
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/SyeodOnBQ_1280.jpg" class="img-fluid" alt="Dog 5">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/BbMFS3bU-.jpg" class="img-fluid" alt="Dog 6">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/TMHL6fN5I.jpg" class="img-fluid" alt="Dog 7">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/IBkYVm4v1.jpg" class="img-fluid" alt="Dog 8">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/d_dNvBD0R.jpg" class="img-fluid" alt="Dog 9">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/Ov_Rzma1O.jpg" class="img-fluid" alt="Dog 10">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/KxtaTW3gD.jpg" class="img-fluid" alt="Dog 11">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/zGnoHL8B8.jpg" class="img-fluid" alt="Dog 12">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/5TKMTrS09.jpg" class="img-fluid" alt="Dog 13">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/VyBXzOjjR.jpg" class="img-fluid" alt="Dog 14">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/SnbUh5ntS.jpg" class="img-fluid" alt="Dog 15">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/omhpknDX6.jpg" class="img-fluid" alt="Dog 16">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/hNa0pli30.jpg" class="img-fluid" alt="Dog 17">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/4hsn54Wod.jpg" class="img-fluid" alt="Dog 18">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/3PxLoudtK.jpg" class="img-fluid" alt="Dog 19">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thedogapi.com/images/ErL9EuNFh.jpg" class="img-fluid" alt="Dog 20">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/3rv.jpg" class="img-fluid" alt="Cat 5">
+      <i hidden> Link with the clue </i>
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/55j.jpg" class="img-fluid" alt="Cat 6">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/5cs.jpg" class="img-fluid" alt="Cat 7">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/5jq.jpg" class="img-fluid" alt="Cat 8">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/av8.jpg" class="img-fluid" alt="Cat 9">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/btr.jpg" class="img-fluid" alt="Cat 10">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/dnl.jpg" class="img-fluid" alt="Cat 11">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTYyNTY0MA.jpg" class="img-fluid" alt="Cat 12">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTk0NTk5Nw.jpg" class="img-fluid" alt="Cat 13">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/jI2dXfp26.png" class="img-fluid" alt="Cat 14">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/bj8bMPQGK.jpg" class="img-fluid" alt="Cat 15">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/20k.jpg" class="img-fluid" alt="Cat 16">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/2f9.jpg" class="img-fluid" alt="Cat 17">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/3ju.jpg" class="img-fluid" alt="Cat 18">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/b0a.jpg" class="img-fluid" alt="Cat 19">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/dfn.jpg" class="img-fluid" alt="Cat 20">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/e04.jpg" class="img-fluid" alt="Cat 21">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTgzMDkyMw.jpg" class="img-fluid" alt="Cat 22">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTk0NTk5Nw.jpg" class="img-fluid" alt="Cat 23">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MjA0MzM3OA.jpg" class="img-fluid" alt="Cat 24">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/KBroiVNCM.jpg" class="img-fluid" alt="Cat 25">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/av8.jpg" class="img-fluid" alt="Cat 9">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/btr.jpg" class="img-fluid" alt="Cat 10">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/dnl.jpg" class="img-fluid" alt="Cat 11">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTYyNTY0MA.jpg" class="img-fluid" alt="Cat 12">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTk0NTk5Nw.jpg" class="img-fluid" alt="Cat 13">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/jI2dXfp26.png" class="img-fluid" alt="Cat 14">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/bj8bMPQGK.jpg" class="img-fluid" alt="Cat 15">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/20k.jpg" class="img-fluid" alt="Cat 16">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/2f9.jpg" class="img-fluid" alt="Cat 17">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/3ju.jpg" class="img-fluid" alt="Cat 18">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/b0a.jpg" class="img-fluid" alt="Cat 19">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/dfn.jpg" class="img-fluid" alt="Cat 20">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/e04.jpg" class="img-fluid" alt="Cat 21">
+      <i hidden> Link with the clue </hidden>
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTgzMDkyMw.jpg" class="img-fluid" alt="Cat 22">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MTk0NTk5Nw.jpg" class="img-fluid" alt="Cat 23">
+    </div>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/MjA0MzM3OA.jpg" class="img-fluid" alt="Cat 24">
+    </div>
+  </div>
+  <div class="row">
+	<p class="col-md-12 text-center bg-primary text-white p-2">These beautiful cats will accompany you in your search for treasure!</p>
+    <div class="col-md-3 image-container">
+      <img src="https://cdn2.thecatapi.com/images/KBroiVNCM.jpg" class="img-fluid" alt="Cat 25">
+    </div>
+</div>
+
+
+  <!-- Hidden link embedded within the page source code -->
+  <a href="#" class="hidden-link" id="hiddenLink">Hidden Link</a>
+
+  <!-- Script to reveal the hidden link -->
+  <script>
+    $(document).ready(function() {
+      // Function to reveal the hidden link when the user clicks anywhere on the page
+      $(document).on("click", function() {
+        $("#hiddenLink").removeClass("hidden-link");
+      });
+    });
+  </script>
+</body>
+</html>
